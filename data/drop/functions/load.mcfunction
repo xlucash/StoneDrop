@@ -1,0 +1,1 @@
+tellraw @a {"text": "Datapack 'DropStone' was succesfully reloaded", "color": "#45E972"}

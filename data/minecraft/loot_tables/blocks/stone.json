@@ -1,0 +1,153 @@
+{
+    "type":"minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.02
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        }
+                    ],
+                    "name": "minecraft:diamond"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.01
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        }
+                    ],
+                    "name": "minecraft:emerald"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.03
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        }
+                    ],
+                    "name": "minecraft:gold_ingot"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.06
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.03
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 5
+                            }
+                        }
+                    ],
+                    "name": "minecraft:lapis_lazuli"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.04
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 4
+                            }
+                        }
+                    ],
+                    "name": "minecraft:redstone"
+                },
+                {
+                    "type": "minecraft:item",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.08
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "minecraft:apply_bonus",
+                            "enchantment": "minecraft:fortune",
+                            "formula": "minecraft:ore_drops"
+                        }
+                    ],
+                    "name": "minecraft:coal"
+                }
+
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cobblestone"
+                }
+            ]
+        }
+    ]
+}
