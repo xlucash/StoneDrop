@@ -141,11 +141,56 @@
             ]
         },
         {
+            "bonus_rolls": 0.0,
+            "entries": [
+              {
+                "type": "minecraft:alternatives",
+                "children": [
+                  {
+                    "type": "minecraft:item",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                          "enchantments": [
+                            {
+                              "enchantment": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "name": "minecraft:stone"
+                  },
+                  {
+                    "type": "minecraft:item",
+                    "conditions": [
+                      {
+                        "condition": "minecraft:survives_explosion"
+                      }
+                    ],
+                    "name": "minecraft:cobblestone"
+                  }
+                ]
+              }
+            ],
+            "rolls": 1.0
+        },
+        {
             "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:cobblestone"
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.2
+                        }
+                    ],
+                    "name": "minecraft:experience_bottle"
                 }
             ]
         }
